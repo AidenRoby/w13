@@ -14,6 +14,10 @@
  .brand-tablet{
      display: none;
  }
+
+ .brand-phone{
+    display: none;
+ }
   
  .navbar-brand {
     font-size: 20px;
@@ -41,6 +45,23 @@
     position: relative;
     top: 100px;
     text-align: center;
+ }
+
+ .display-4-j1{
+    font-size: 25px;
+    color: aliceblue;
+ }
+
+ .lead-tablet{
+    display: none;
+ }
+
+ .lead-phone{
+    display: none;
+ }
+
+ .lead-desktop{
+    display: block;
  }
   
  .j-btn {
@@ -118,7 +139,7 @@
 
  @media only screen and (max-width: 800px) {
     .navbar {
-        background-color: purple;
+        background-color: transparent;
      } 
 
      .cover{
@@ -132,9 +153,52 @@
      .brand-desktop{
         display: none;
      }
+
+     .lead-tablet{
+        display: block;
+     }
+
+     .lead-desktop{
+        display: none;
+     }
  }
 
  /* smartphones: 500px */
+
+ @media only screen and (max-width: 500px) {
+   .navbar {
+      background-color: transparent;
+   } 
+
+   .cover{
+      background-image: url("banana-4415864_1920.jpg");
+   }
+
+   .brand-tablet{
+       display: none;
+   }
+
+   .brand-desktop{
+      display: none;
+   }
+
+   .brand-phone{
+      display: block;
+   }
+
+   .lead-tablet{
+      display: none;
+   }
+
+   .lead-desktop{
+      display: none;
+   }
+
+   .lead-phone{
+      display: block;
+   }
+}
+ }
 
 
  
